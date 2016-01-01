@@ -16,9 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var dividerView: UIView!
     
-    @IBOutlet var settingsButton:UIBarButtonItem!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,14 +28,6 @@ class ViewController: UIViewController {
         //self.view.backgroundColor = lightPlumColor;
         //let parchmentColor = UIColor(netHex: 0xF2EEB3);
         //dividerView.backgroundColor = parchmentColor;
-        
-        let defaults = NSUserDefaults()
-        let tipValue = defaults.doubleForKey("default_tip_percentage")
-        
-        self.settingsButton.title = NSString(string: "\u{2699}") as String
-        if let font = UIFont(name: "Helvetica", size: 18.0) {
-            self.settingsButton.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
-        }
         
     }
 
@@ -67,9 +56,7 @@ class ViewController: UIViewController {
         print("view will appear")
         // This is a good place to retrieve the default tip percentage from NSUserDefaults
         // and use it to update the tip amount
-        
-        let defaults = NSUserDefaults()
-        let tipValue = defaults.doubleForKey("default_tip_percentage")
+
     }
     
     
