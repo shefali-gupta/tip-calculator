@@ -36,6 +36,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 Describe any challenges encountered while building the app.
 The calculator did not function properly when I made billAmount, tip, and total using "var" because the variables' values were not being changed anywhere else. I solved the problem by using "let" instead.
 
+Other notes: My files and project are committed under my sister's name, Sonali, because I user her laptop to build the app.
+
 ## License
 
 Copyright [2015] [Shefali Gupta]
